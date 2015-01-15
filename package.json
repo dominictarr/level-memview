@@ -1,0 +1,25 @@
+{
+  "name": "level-memview",
+  "description": "in memory view on top of level.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/level-memview",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/level-memview.git"
+  },
+  "dependencies": {
+    "level-live-stream": "~1.4.9",
+    "pull-stream": "~2.26.0",
+    "pull-level": "~1.2.0"
+  },
+  "devDependencies": {
+    "tape": "~3.0.3",
+    "level-test": "~1.6.6"
+  },
+  "scripts": {
+    "prepublish": "npm ls &&  npm test",
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"
+}
